@@ -13,7 +13,6 @@ var matches = 0;
 var attempts = 0;
 var accuracy = 0;
 var games_played = 0;
-var SetTimeout = setTimeout();
 $(document).ready(function () {
     backgroundRandomizer();
     shuffle(cards);
@@ -23,7 +22,6 @@ $(document).ready(function () {
         reset_stats();
         display_stats();
         backgroundRandomizer();
-        $('.card').removeClass('flipped');
     });
 });
 function backgroundRandomizer() {
@@ -57,12 +55,7 @@ function card_clicked(){
             }
         }
         else {
-            var timeout = setTimeout( function() {
-                    $(first_card_clicked).removeClass('flipped');
-                    $(second_card_clicked).removeClass('flipped');
-                    first_card_clicked = null;
-                    second_card_clicked = null;
-                }, 2000);
+            setTimeout(flipCardBack, 2000);
         }
         accuracy = (matches/attempts);
         console.log('Accuracy: ', accuracy);
@@ -82,4 +75,12 @@ function reset_stats() {
     attempts = 0;
     accuracy = 0;
     display_stats();
+}
+
+function flipCardBack() {
+    $(first_card_clicked).removeClass('flipped');
+    $(second_card_clicked).removeClass('flipped');
+    first_card_clicked = null;
+    second_card_clicked = null;
+
 }
