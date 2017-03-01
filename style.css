@@ -60,13 +60,13 @@ header img{
 }
 .stats_info{
     background: rgba(200, 0, 0, 0.5);
-    transform: translateY(131%);
+    transform: translateY(87%);
+    color: white;
 }
 .games-played,
 .attempts, .accuracy{
-    font-size: 3vh;
+    font-size: 2vh;
     margin: 2vh 2vw;
-    text-align: left;
 }
 .reset{
     width: 10vw;
@@ -93,12 +93,21 @@ header img{
 .card{
     position: relative;
     margin: 1vh 1vw;
+    transition: 1s;
+    transform-style: preserve-3d;
 }
 
 .back{
     position: absolute;
+    backface-visibility: hidden;
     top:0;
     left:0;
+}
+.front{
+    transform: rotateY(180deg);
+}
+.card.flipped{
+    transform: rotateY(180deg);
 }
 @media screen and (max-width: 376px){
     .stats-window {
@@ -119,7 +128,8 @@ header img{
     }
     .games-played,
     .attempts, .accuracy{
-        font-size: 2vh;
+        font-size: 3vw;
+        margin: 1vh 2vw;
     }
     .reset{
         width: auto;
