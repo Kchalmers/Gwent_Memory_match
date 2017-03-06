@@ -90,6 +90,11 @@ header img{
     background-repeat: no-repeat;
     height: 80vh;
 }
+#victory{
+    display: flex;
+    height: 80vh;
+    width: 85%;
+}
 /*card css*/
 .card img{
     width: 11vw;
@@ -124,6 +129,10 @@ header img{
     }
     #game-area{
         height: 65vh;
+    }
+    #victory{
+        height: 65vh;
+        width: 100%
     }
     .stats_info{
         width: 33%;

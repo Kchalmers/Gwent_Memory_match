@@ -86,9 +86,7 @@ function prevent_drag(){
 }
 //will show a victory message after all matches are made
 function victory() {
-    if(confirm('You have won! Click OK to reset') == true){
-        reset();
-    }
+    $('#game-area').replaceWith('<img src="../memory_match/images/victory.png" id = "victory">')
 }
 
 //what happens when cards are clicked
