@@ -9,7 +9,7 @@ var accuracy = 0;
 var games_played = 0;
 var click_stop = true;
 
-//runs inizialize function
+//runs initialize function
 $(document).ready(initializeGame);
 // functions starts initial functions
 function initializeGame() {
@@ -32,7 +32,6 @@ function display_stats() {
     $('.games-played .value').text(games_played);
     $('.attempts .value').text(attempts);
     accuracy = Math.round(accuracy * 100);
-    console.log('Accuracy %: ', accuracy);
     $('.accuracy .value').text(accuracy + '%');
 }
 //sets the stats back to 0
@@ -48,7 +47,6 @@ function reset_stats() {
 function card_click_reset() {
     first_card_clicked = null;
     second_card_clicked = null;
-    console.log('First Card Clicked: ', first_card_clicked, 'Second Card Clicked: ', second_card_clicked);
 }
 //makes first and second cards clicked flip to show card backs
 function flipCardBack() {
@@ -103,24 +101,18 @@ function card_clicked(){
     $(this).addClass('flipped');
     if(first_card_clicked === null){
         first_card_clicked = this;
-        console.log('first card is: ', first_card_clicked);
     }
     else{
         second_card_clicked = this;
-        console.log('second card is: ', second_card_clicked);
         attempts++;
-        console.log('Attempts: ', attempts);
         //compares the face images against each other
         if($(second_card_clicked).children('.front').find('img').attr('src') === $(first_card_clicked).children('.front').find('img').attr('src')){
             match_counter++;
-            console.log('Match Counter: ', match_counter);
             matches++;
-            console.log('Matches: ', matches);
             card_click_reset();
             //end of game
             if(match_counter == total_possible_matches){
                 victory();
-                console.log('victory');
             }
         }
         else {
@@ -128,7 +120,6 @@ function card_clicked(){
             setTimeout(flipCardBack, 1500);
         }
         accuracy = (matches/attempts);
-        console.log('Accuracy: ', accuracy);
         display_stats();
     }
 }
