@@ -100,7 +100,7 @@ function MemoryMatch() {
             return;
         }
         //flips the card to show face
-        $(this).addClass('flipped');
+        $(this).toggleClass('flipped');
         if (first_card_clicked === null) {
             first_card_clicked = this;
         }
