@@ -121,6 +121,9 @@ button:focus {outline:0;}
     left:0;
 }
 .front{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     transform: rotateY(180deg);
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
