@@ -86,7 +86,6 @@ button:focus {outline:0;}
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 80vh;
@@ -99,7 +98,7 @@ button:focus {outline:0;}
 /*card css*/
 .card img{
     width: 11vw;
-    height: 24vh;
+    height: 23.5vh;
 }
 .card{
     position: relative;
@@ -110,9 +109,6 @@ button:focus {outline:0;}
     transition: 1s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
 }
 
 .back{
