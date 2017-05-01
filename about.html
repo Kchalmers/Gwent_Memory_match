@@ -5,17 +5,70 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About Page</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+            font-family: Papyrus;
+            color: red;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("../memory_match/images/bottom-bar.jpg");
+            background-size: 100% 100%;
+        }
+        h1{
+            font-size: 6em;
+        }
+        p {
+            font-size: 3em;
+        }
+        .container{
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.6);
+            height: 100%;
+        }
+        .btn {
+            height: 4em;
+            width: 10em;
+        }
+        a{
+            color: darkred;
+            font-size: 2em;
+        }
+        @media screen and (max-width: 415px) {
+            h1{
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            a{
+                font-size: 1em;
+            }
+            .btn {
+                height: 3em;
+                width: 6em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>About Me:</h1>
-    <h3>Kevin Chalmers</h3>
-    <div>Image of Me</div>
-    <div>
-        <p>
-            I am a new programmer, working on improving my skills in JavaScript. I started this out as a procedural JavaScript project. I am currently in the process of changing this in to an Object-Oriented Project.
-
-        </p>
+    <div class="container">
+        <h1>The Game:</h1>
+        <div class="col-xs-12">
+            <p>
+                I am a new programmer, working on improving my skills in JavaScript. I started this out as a procedural JavaScript project. I have currently modified this into an Object-Oriented Project.
+                This has currently only been tested on a limited number of mobile phones so it may not work on all phones.
+            </p>
+            <p>
+                This is a memory match game based on the Witcher videogame's gwent cards. You must match pairs of the same cards to win the game.
+            </p>
+            <br>
+            <button type="button" class="btn btn-danger"><a href="index.html">Back</a></button>
+        </div>
     </div>
 </body>
 </html>
