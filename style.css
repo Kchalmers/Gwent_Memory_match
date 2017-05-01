@@ -212,7 +212,7 @@ button:focus {outline:0;}
         right: 8%;
     }
     .card{
-        margin: 0 .5vw;
+        margin-top: auto;
     }
     .card img{
         width: 13vw;
