@@ -103,10 +103,10 @@ button:focus {outline:0;}
 .card{
     position: relative;
     margin: .5vh 1vw;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: 1s;
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: 2s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
