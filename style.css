@@ -109,6 +109,7 @@ button:focus {outline:0;}
     transition: 1s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
 }
 
 .back{
