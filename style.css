@@ -98,7 +98,7 @@ button:focus {outline:0;}
 /*card css*/
 .card img{
     width: 11vw;
-    height: 23vh;
+    height: 22.5vh;
 }
 .card{
     position: relative;
@@ -133,7 +133,7 @@ button:focus {outline:0;}
     -o-transform: rotateY( 180deg );
 }
 .modal {
-    /*display: none;*/
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
