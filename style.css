@@ -211,6 +211,9 @@ button:focus {outline:0;}
         top: 32%;
         right: 8%;
     }
+    .card{
+        margin: .5vh .5vw;
+    }
     .card img{
         width: 13vw;
         height: 15vh;
