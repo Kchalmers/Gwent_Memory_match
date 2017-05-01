@@ -119,7 +119,7 @@ function MemoryMatch() {
             }
             else {
                 click_stop = false;
-                setTimeout(self.flipCardBack, 1500);
+                setTimeout(self.flipCardBack, 2000);
             }
             accuracy = (matches / attempts);
             self.display_stats();
