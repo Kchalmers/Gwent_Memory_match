@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content=" matching game">
+    <meta name="keywords" content="header, stat-window, game-area">
+    <meta name="author" content="Kevin Chalmers">
+    <title>Memory Matching Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../memory_match/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <audio id="audio" autoplay="autoplay" loop>
+        <source src="../memory_match/music/bensound-epic.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="game-header">
+            <header>
+                <div class="game-logo">
+                    <img src="../memory_match/images/logo.png">
+                </div>
+                <nav class="header-list">
+                    <ul class="">
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="victoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <aside class="stats-window">
+            <div class="stats_info">
+                <div class="games-played">
+                    <div class="label">Games Played: </div>
+                    <div class="value">0</div>
+                </div>
+                <div class="attempts">
+                    <div class="label">Attempts: </div>
+                    <div class="value">0</div>
+                </div>
+                <div class="accuracy">
+                    <div class="label">Accuracy: </div>
+                    <div class="value">0</div>
+                </div>
+            </div>
+            <button class="reset">Reset</button>
+            <button class="music">Music</button>
+        </aside>
+        <section id="game-area">
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Ves.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Vernon_Roche.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sile_de_Tansarville.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Siegfried_of_Denesle.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Esterad_Thyssen.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/John_Natalis.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Philippa_Eilhart.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sabrina_Glevissig.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sheldon_Skaggs.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Ves.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Vernon_Roche.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sile_de_Tansarville.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Siegfried_of_Denesle.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Esterad_Thyssen.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/John_Natalis.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Philippa_Eilhart.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sabrina_Glevissig.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+            <div class="card">
+                <div class="front"><img src="../memory_match/images/northern-realms/Sheldon_Skaggs.png"></div>
+                <div class="back"><img src="../memory_match/images/northern-realms/northern-back.png"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
