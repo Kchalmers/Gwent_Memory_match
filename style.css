@@ -173,6 +173,9 @@ button:focus {outline:0;}
     cursor: pointer;
 }
 @media screen and (max-width: 415px){
+    header{
+        height: 15vh;
+    }
     .stats-window {
         background-image: url("../memory_match/images/bottom-bar.jpg");
         position: absolute;
