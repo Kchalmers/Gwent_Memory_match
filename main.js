@@ -129,5 +129,6 @@ function MemoryMatch() {
 
 $(document).ready(function() {
     game = new MemoryMatch();
+    $('#audio').prop('muted', true);
     game.initializeGame();
 });
