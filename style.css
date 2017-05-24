@@ -135,6 +135,10 @@ button:focus {outline:0;}
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
 }
+.card.flipped > .back {
+    transition: .3s;
+    visibility: hidden;
+}
 .modal {
     display: none;
     position: fixed;
