@@ -1,4 +1,7 @@
-body{
+html,
+body {
+    width: 100%;
+    height: 100%;
     margin: 0;
 }
 .container{
@@ -29,7 +32,7 @@ header img{
     height: 100%;
 }
 .header-list{
-    font-size: 3vh;
+    font-size: 1.5rem;
     width: 30%;
     text-align: right;
     position: absolute;
@@ -83,7 +86,11 @@ header img{
     border-color: indianred;
     font-family: serif;
 }
-button:focus {outline:0;}
+button:focus,
+button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
 /*game area css*/
 #game-area{
     display: -webkit-box;
@@ -197,11 +204,13 @@ button:focus {outline:0;}
         background-image: url("../memory_match/images/bottom-bar.jpg");
         position: absolute;
         bottom: 0;
+        float: none;
         width: 100vw;
         height: 15vh;
     }
     #game-area{
-        height: 70vh;
+        height: 70%;
+        position: absolute;
     }
     #victory{
         height: 65vh;
