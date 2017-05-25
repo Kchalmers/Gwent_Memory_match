@@ -19,6 +19,7 @@ header{
     height: 80%;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 4%;
 }
@@ -33,6 +34,7 @@ header img{
     text-align: right;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 66%;
 }
@@ -61,6 +63,7 @@ header img{
 }
 .stats_info{
     background: rgba(200, 0, 0, 0.5);
+    -webkit-transform: translateY(45%);
     transform: translateY(45%);
     color: white;
 }
@@ -73,6 +76,7 @@ header img{
     width: 10vw;
     height: 4vh;
     font-size: 68%;
+    -webkit-transform: translateY(600%);
     transform: translateY(600%);
     margin: 3px;
     background-color: darkred;
@@ -82,16 +86,29 @@ header img{
 button:focus {outline:0;}
 /*game area css*/
 #game-area{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 80vh;
 }
 #victory{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    display: -webkit-flex;
     height: 80vh;
     width: 85%;
 }
@@ -104,8 +121,7 @@ button:focus {outline:0;}
     position: relative;
     margin: .5vh 1vw;
     -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
+    -webkit-transition: 1s;
     transition: 1s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -136,6 +152,7 @@ button:focus {outline:0;}
     -o-transform: rotateY( 180deg );
 }
 .card.flipped > .back {
+    -webkit-transition: .3s;
     transition: .3s;
     visibility: hidden;
 }
@@ -184,7 +201,7 @@ button:focus {outline:0;}
         height: 15vh;
     }
     #game-area{
-        height: 71vh;
+        height: 70vh;
     }
     #victory{
         height: 65vh;
@@ -195,6 +212,7 @@ button:focus {outline:0;}
         height: 100%;
         float: left;
         padding-top: .5vh;
+        -webkit-transform: none;
         transform: none;
     }
     .games-played,
@@ -205,6 +223,7 @@ button:focus {outline:0;}
     .reset{
         width: auto;
         font-size: 10px;
+        -webkit-transform: none;
         transform: none;
         position: absolute;
         top: 32%;
@@ -213,16 +232,17 @@ button:focus {outline:0;}
     .music{
         width: auto;
         font-size: 10px;
+        -webkit-transform: none;
         transform: none;
         position: absolute;
         top: 32%;
         right: 8%;
     }
-    .card{
+    .card {
         margin-top: 0;
     }
     .card img{
-        width: 13vw;
-        height: 14vh;
+        width: 14vw;
+        height: 15vh;
     }
 }
