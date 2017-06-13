@@ -84,7 +84,7 @@ function prevent_drag(){
 }
 //will show a victory message after all matches are made
 function victory() {
-    $('#game-area').replaceWith('<img src="../memory_match/images/victory.png" id = "victory">')
+    $('#game-area').replaceWith('<img src="../memory_match/images/victory.jpg" id = "victory">')
 }
 
 //what happens when cards are clicked

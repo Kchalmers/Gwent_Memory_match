@@ -13,7 +13,7 @@ header{
     position: relative;
     width: 100vw;
     height: 20vh;
-    background-image: url("../memory_match/images/witcher3Banner.jpg");
+    background-image: url("images/witcher3Banner.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -58,7 +58,7 @@ header img{
     height: 80vh;
     width: 15%;
     float: left;
-    background-image: url("../memory_match/images/left-bar.jpg");
+    background-image: url("images/left-bar.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -176,7 +176,7 @@ button:hover {
     background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
-    background-image: url("../memory_match/images/victory.png");
+    background-image: url("images/victory.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 4% auto;
@@ -201,7 +201,7 @@ button:hover {
         height: 15vh;
     }
     .stats-window {
-        background-image: url("../memory_match/images/bottom-bar.jpg");
+        background-image: url("images/bottom-bar.jpg");
         position: absolute;
         bottom: 0;
         float: none;
