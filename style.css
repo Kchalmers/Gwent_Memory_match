@@ -14,7 +14,7 @@ header{
     width: 100vw;
     height: 20vh;
     background-image: url("images/witcher3Banner.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .game-logo{
@@ -64,7 +64,8 @@ header img{
     width: 15%;
     float: left;
     background-image: url("images/left-bar.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     overflow: hidden;
@@ -113,7 +114,8 @@ button:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
 }
@@ -183,7 +185,8 @@ button:hover {
 }
 .modal-content {
     background-image: url("images/victory.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin: 4% auto;
     height: 80vh;
@@ -224,10 +227,10 @@ button:hover {
         width: 100%;
     }
     .stats_info{
-        width: 33%;
+        width: 40%;
         height: 100%;
         float: left;
-        padding-top: .5vh;
+        padding-top: 1vh;
         -webkit-transform: none;
         transform: none;
     }
