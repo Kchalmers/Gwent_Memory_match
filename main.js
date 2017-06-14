@@ -88,7 +88,7 @@ function MemoryMatch() {
         $('img').prop('draggable', false);
     };
     this.victory = function() {
-        modal.style.display = "block";
+            modal.style.display = "block";
     };
     this.card_clicked = function() {
         //prevents the cards from being clicked
@@ -114,7 +114,7 @@ function MemoryMatch() {
                 self.card_click_reset();
                 //end of game
                 if (match_counter === total_possible_matches) {
-                    self.victory();
+                    setTimeout(self.victory, 2000);
                 }
             }
             else {
