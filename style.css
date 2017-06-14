@@ -230,7 +230,9 @@ button:hover {
         width: 40%;
         height: 100%;
         float: left;
-        padding-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
         -webkit-transform: none;
         transform: none;
     }
