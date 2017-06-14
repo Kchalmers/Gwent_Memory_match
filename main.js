@@ -114,7 +114,7 @@ function MemoryMatch() {
                 self.card_click_reset();
                 //end of game
                 if (match_counter === total_possible_matches) {
-                    setTimeout(self.victory, 2000);
+                    setTimeout(self.victory, 4000);
                 }
             }
             else {
