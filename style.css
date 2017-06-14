@@ -230,14 +230,14 @@ button:hover {
         width: 40%;
         height: 100%;
         float: left;
-        padding-top: 1vh;
+        padding-top: 2vh;
         -webkit-transform: none;
         transform: none;
     }
     .games-played,
     .attempts, .accuracy{
         font-size: 2vw;
-        margin: 0.5vh 2vw;
+        margin: 0;
     }
     .reset{
         width: auto;
