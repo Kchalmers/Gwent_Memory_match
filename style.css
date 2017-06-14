@@ -271,7 +271,7 @@ button:hover {
         right: 8%;
     }
     .card {
-        margin: 0 3vw;
+        margin: 0 3vw 0 2vw;
     }
     .card img{
         width: 14vw;
