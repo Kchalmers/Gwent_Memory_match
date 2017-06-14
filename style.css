@@ -273,10 +273,6 @@ button:hover {
     .card {
         margin: 0 3vw 0 2vw;
     }
-    .card img{
-        width: 14vw;
-        height: 15vh;
-    }
     .header-list {
         font-size: 1.5rem;
     }
@@ -316,5 +312,15 @@ and (orientation: landscape) {
     }
     .header-list {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .card {
+        height: 22%;
     }
 }
