@@ -229,7 +229,6 @@ button:hover {
     .stats_info{
         width: 40%;
         height: 100%;
-        padding-top: 1vh;
         float: left;
         display: flex;
         justify-content: center;
@@ -239,8 +238,12 @@ button:hover {
     }
     .games-played,
     .attempts, .accuracy{
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 0;
+    }
+    .games-played > div,
+    .attempts > div, .accuracy > div{
+        display: inline-block;
     }
     .reset{
         width: auto;
