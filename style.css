@@ -129,12 +129,14 @@ button:hover {
 }
 /*card css*/
 .card img{
-    width: 11vw;
-    height: 22.5vh;
+    width: 100%;
+    height: 100%;
 }
 .card{
+    width: 10%;
+    height: 31%;
     position: relative;
-    margin: .5vh 1vw;
+    margin: .5vh 2vw;
     -webkit-transition: -webkit-transform 1s;
     -webkit-transition: 1s;
     transition: 1s;
@@ -144,6 +146,8 @@ button:hover {
 }
 
 .back{
+    width: 100%;
+    height: 100%;
     position: absolute;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -152,6 +156,8 @@ button:hover {
     left:0;
 }
 .front{
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -229,6 +235,7 @@ button:hover {
     .stats_info{
         width: 40%;
         height: 100%;
+        padding-top: 1vh;
         float: left;
         display: flex;
         justify-content: center;
@@ -238,8 +245,12 @@ button:hover {
     }
     .games-played,
     .attempts, .accuracy{
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 0;
+    }
+    .games-played > div,
+    .attempts > div, .accuracy > div{
+        display: inline-block;
     }
     .reset{
         width: auto;
@@ -260,11 +271,7 @@ button:hover {
         right: 8%;
     }
     .card {
-        margin-top: 0;
-    }
-    .card img{
-        width: 14vw;
-        height: 15vh;
+        margin: 0 3vw 0 2vw;
     }
     .header-list {
         font-size: 1.5rem;
@@ -305,5 +312,15 @@ and (orientation: landscape) {
     }
     .header-list {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .card {
+        height: 22%;
     }
 }
