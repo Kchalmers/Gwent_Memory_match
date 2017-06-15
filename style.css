@@ -271,7 +271,8 @@ button:hover {
         right: 8%;
     }
     .card {
-        margin: 0 3vw 0 2vw;
+        margin: 2vh 3vw 2vh 2vw;
+        height: 22%;
     }
     .header-list {
         font-size: 1.5rem;
